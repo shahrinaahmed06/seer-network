@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('agile.png');
+	background:  #ee7752;
+	background-size: 400% 400%;
+	animation: gradientBG 20s ease infinite;
+	
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	-webkit-animation: AnimationName 18s ease infinite;
+-moz-animation: AnimationName 18s ease infinite;
+animation: AnimationName 18s ease infinite;
+}
+
+/* animation for background gradient */
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 50%;
+  padding: 100px 300px 0px 150px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-radius: 8%;
+  height: 400px;
+  width: 400px;
+  opacity: 0.9;
+  border: 5px solid black;
+
+  -webkit-animation: jackInTheBox 1.5s ease ;
+-moz-animation: jackInTheBox 1.5s ease ;
+animation: jackInTheBox 1.5s ease ;
+
+}
+
+@-webkit-keyframes jackInTheBox {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.1) rotate(30deg);
+    transform: scale(0.1) rotate(30deg);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+
+  50% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes jackInTheBox {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.1) rotate(30deg);
+    transform: scale(0.1) rotate(30deg);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+
+  50% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.jackInTheBox {
+  -webkit-animation-name: jackInTheBox;
+  animation-name: jackInTheBox;
+}
+
+.card:hover{
+  opacity: 1;
+}
+
+#one:hover{
+    background-color: #990d35;
+  }
+  #two:hover{
+    background-color: #ab4967;  /*or 00A5CF?*/
+  }
+  #three:hover{
+    background-color: #9cfffa;
+  }
+  #four:hover{
+    background-color: #FCD581;
+  }
+
+h1{
+	font-size: 52px;
+	text-align: center;
+}
+
+h2{
+  font-size: 22px;
+}
+
+#textbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+    padding-top: 2px;
+}

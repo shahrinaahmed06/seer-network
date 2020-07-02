@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>Submission for SEER</title>
+    <meta name="viewport" http-equiv="Content-Type" content="text/html, width=device-width, initial-scale=1" charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <div id="textbox">
+      <a href="#" onclick="history.back()"><img class="alignright" src="back.jpg" height="35px" width="35px"></a>
+      <h1 class="aligncenter">Source Submission for SEER</h1>
+      <a href="index.html"><img class="alignleft" src="home3.jpg" height="35px" width="35px"></a>
+    </div>
+
+    <div class="column" style="position: fixed; top: 40%; left: 40%; margin-top: -100px; margin-left: -100px;">
+      <div class="card" id="four" style = "height: max-content; margin-top: -100px; margin-left: -100px;">
+        <form action="seerAddingProcess.php" method="POST">
+          <p>
+            <label for="source">Enter Source </label>
+            <input type="text" id="source" name="source" placeholder="type here" required>
+          </p>
+          <p>
+            <label for="technique">Enter Technique </label>
+            <input type="text" id="technique" name="technique" placeholder="type here" required>
+          </p>
+          <p>
+            <label for="title">Enter Title </label>
+            <input type="text" id="title" name="title" placeholder="type here" required>
+          </p>
+          <p>
+            <label for="author">Enter Author </label>
+            <input type="text" id="author" name="author" placeholder="type here" required>
+          </p>
+          <p>
+            <label for="link">Enter DOI Link </label>
+            <input type="text" id="link" name="link" placeholder="type here">
+          </p>
+          <p>
+            <label for="published_year">Year </label>
+            <input type="number" id="published_year" name="published_year" placeholder="type here"required>
+          </p>
+          <p>
+            <label for="results">Enter Results </label>
+            <input type="text" id="results" name="results" placeholder="type here" required>
+          </p>
+          <a href="#"><button type="submit">Submit</button></a>
+          <a href="#"><button type="reset">RESET</button></a>
+        </form>
+      </div>
+    </div>
+
+    <footer>© Created with love from students of AUT</footer>
+
+  </body>    
+</html>
